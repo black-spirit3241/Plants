@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:minHeight="?attr/actionBarSize"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutExpandedTextStyle"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            ​<ImageView
+            android:id="@+id/ivDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="tPlantImage">
+
+        </ImageView>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+            ​
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        ​
+        ​
+    </com.google.android.material.appbar.AppBarLayout>
+    ​ ​
+    <include layout="@layout/content_detail" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabDetail"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/fab_margin"-->
+<!--        app:layout_anchor="@id/appBarLayout"-->
+<!--        android:backgroundTint="@color/iconColor"-->
+<!--        app:layout_anchorGravity="bottom|end"-->
+<!--        app:srcCompat="@drawable/ic_favorite" />-->
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
